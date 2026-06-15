@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noryx — Growing People. Growing Business.</title>
+<meta name="description" content="Noryx is a business education centre for everyone in Malaysia. Whatever your starting point — worker, contractor, student, owner — we sit with you one-on-one and help you find your path to earning and growing.">
+<meta name="author" content="Noryx">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Noryx — Growing People. Growing Business.">
+<meta property="og:description" content="A business education centre for everyone. We sit with you one-on-one and help you find your path — whatever your starting point.">
+<meta property="og:site_name" content="Noryx">
+<meta property="og:locale" content="en_MY">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#2884FF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"EducationalOrganization","name":"Noryx",
+  "slogan":"Growing People. Growing Business.",
+  "description":"A business education centre teaching people from any background how to make money and understand business fundamentals, starting with one-on-one sessions.",
+  "address":{"@type":"PostalAddress","addressCountry":"MY"},
+  "contactPoint":{"@type":"ContactPoint","contactType":"enrollment","telephone":"+60-11-2100-0503","availableLanguage":["English","Malay"]}
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue:#2884FF;--blue-dk:#1466E0;--blue-soft:#E8F1FF;--blue-mist:#F4F8FF;--blue-lt:#7DB4FF;
+  --ink:#0B1220;--ink-2:#2A3346;--slate:#5C6678;--line:#E5E9F0;--white:#fff;--paper:#FBFCFE;
+  --hope:#FFC233;--red:#C0392B;--grain:#AEB6C2;
+  --fd:'Sora',-apple-system,sans-serif;--fb:'Inter',-apple-system,sans-serif;
+  --max:1160px;--nav-h:72px;--r:18px;--r-sm:12px;--ease:cubic-bezier(.22,1,.36,1);
+  --shadow:0 18px 50px -22px rgba(20,40,90,.28);--shadow-sm:0 8px 24px -14px rgba(20,40,90,.25)}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--fb);background:var(--paper);color:var(--ink-2);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--blue);text-decoration:none;transition:color .2s var(--ease)}
+h1,h2,h3,h4{font-family:var(--fd);color:var(--ink);line-height:1.1;letter-spacing:-.02em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--fd);font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}
+.sec{padding:96px 0}
+.logo-ph{display:inline-flex;align-items:center;gap:10px;font-family:var(--fd);font-weight:800;font-size:1.32rem;color:var(--ink);letter-spacing:-.02em}
+.logo-ph .box{width:38px;height:38px;flex:none;border:2px dashed var(--blue);border-radius:9px;display:grid;place-items:center;font-size:.48rem;font-weight:700;color:var(--blue);letter-spacing:.03em;text-align:center;line-height:1.15;background:var(--blue-soft)}
+.btn{position:relative;display:inline-flex;align-items:center;gap:9px;font-family:var(--fd);font-weight:600;font-size:1rem;padding:15px 28px;border-radius:999px;cursor:pointer;border:1.5px solid transparent;transition:transform .22s var(--ease),box-shadow .22s var(--ease),background .22s,color .22s;overflow:hidden;white-space:nowrap}
+.btn>span,.btn>svg{position:relative;z-index:1}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 12px 28px -10px rgba(40,132,255,.6)}
+.btn-primary::after{content:"";position:absolute;inset:0;background:var(--blue-dk);transform:translateY(101%);transition:transform .3s var(--ease);z-index:0}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 40px -10px rgba(40,132,255,.7);color:#fff}
+.btn-primary:hover::after{transform:translateY(0)}
+.btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-3px);box-shadow:var(--shadow-sm)}
+.btn-lg{padding:18px 36px;font-size:1.08rem}
+.nav{position:fixed;inset:0 0 auto 0;height:var(--nav-h);z-index:100;background:rgba(251,252,254,.82);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s,background .3s}
+.nav.scrolled{border-color:var(--line);background:rgba(251,252,254,.94)}
+.nav-inner{max-width:var(--max);margin:0 auto;height:100%;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{color:var(--ink-2);font-weight:500;font-size:.96rem;position:relative}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-5px;width:100%;height:2px;background:var(--blue);transform:scaleX(0);transform-origin:right;transition:transform .28s var(--ease)}
+.nav-links a:hover{color:var(--blue)}.nav-links a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav-cta{display:flex;align-items:center;gap:14px}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;font-family:var(--fd);font-weight:600;font-size:.8rem;flex:none}
+.lang button{border:0;background:#fff;color:var(--slate);padding:7px 13px;cursor:pointer;transition:.2s}
+.lang button.on{background:var(--blue);color:#fff}
+.hamburger{display:none;background:none;border:0;cursor:pointer;width:42px;height:42px;flex-direction:column;justify-content:center;gap:5px;padding:0 9px}
+.hamburger span{height:2px;background:var(--ink);border-radius:2px;transition:.3s}
+.hero{position:relative;padding:calc(var(--nav-h) + 70px) 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-10%;right:-10%;width:60%;height:120%;background:radial-gradient(closest-side,rgba(40,132,255,.10),transparent 70%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative}
+.hero h1{font-size:clamp(2.5rem,5.2vw,4rem);font-weight:800;letter-spacing:-.035em}
+.hero h1 .accent{color:var(--blue)}
+.hero-sub{font-size:1.22rem;color:var(--ink-2);margin-top:22px;max-width:32ch}
+.hero-actions{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+.hero-note{margin-top:20px;font-size:.9rem;color:var(--slate);display:flex;align-items:center;gap:8px}
+.hero-note b{color:var(--ink)}
+.tag-pill{display:inline-flex;align-items:center;gap:9px;background:var(--blue-soft);color:var(--blue-dk);font-family:var(--fd);font-weight:600;font-size:.85rem;padding:7px 15px;border-radius:999px;margin-bottom:22px}
+.tag-pill .dot{width:7px;height:7px;border-radius:50%;background:var(--blue);animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+.hero-art{position:relative;aspect-ratio:1/1;max-width:440px;margin-left:auto;width:100%}
+.particle-card{position:absolute;inset:0;border-radius:26px;background:linear-gradient(160deg,#fff,#F4F8FF);border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden}
+.pc-head{position:absolute;top:0;left:0;right:0;padding:22px 24px;display:flex;justify-content:space-between;align-items:center;z-index:3}
+.pc-head .lbl{font-family:var(--fd);font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--slate)}
+.pc-head .stage{font-family:var(--fd);font-weight:700;font-size:.72rem;color:var(--blue);background:var(--blue-soft);padding:5px 11px;border-radius:999px}
+.svg-stage{position:absolute;inset:0;width:100%;height:100%}
+.svg-stage rect.bar{transition:transform .45s var(--ease);transform-origin:bottom}
+.particle-card:hover rect.bar{transform:scaleY(1.07)}
+.svg-stage .dot{transition:transform .55s var(--ease),opacity .55s}
+.particle-card:hover .svg-stage .dot{transform:translate(15px,-9px);opacity:1}
+.float-chip{position:absolute;background:#fff;border:1px solid var(--line);border-radius:13px;box-shadow:var(--shadow-sm);padding:11px 15px;display:flex;align-items:center;gap:10px;font-family:var(--fd);font-weight:600;font-size:.86rem;color:var(--ink);transition:transform .25s var(--ease);z-index:4}
+.float-chip:hover{transform:scale(1.06) rotate(-1deg)}
+.float-chip .ic{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font-size:1rem;background:var(--blue-soft)}
+.fc-1{top:8%;left:-7%;animation:bob 5s ease-in-out infinite}
+.fc-2{bottom:11%;right:-6%;animation:bob 6s ease-in-out infinite .6s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.trust-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px 40px;padding:26px 24px;text-align:center}
+.trust-item{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--ink-2);font-weight:500}
+.trust-item svg{flex:none;color:var(--blue)}
+.section-head{max-width:640px;margin:0 auto 56px;text-align:center}
+.section-head h2{font-size:clamp(2rem,3.6vw,2.7rem);font-weight:800}
+.section-head p{font-size:1.12rem;color:var(--ink-2);margin-top:16px}
+.paths{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.path{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:38px 34px;transition:transform .28s var(--ease),box-shadow .28s var(--ease),border-color .28s;overflow:hidden}
+.path::after{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.path:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+.path:hover::after{transform:scaleX(1)}
+.path .ptag{font-family:var(--fd);font-weight:800;font-size:.8rem;letter-spacing:.16em;color:var(--blue)}
+.path h3{font-size:1.55rem;margin:14px 0 6px;font-weight:700}
+.path .who{color:var(--slate);font-size:.95rem;margin-bottom:18px}
+.path ul{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:26px}
+.path li{display:flex;gap:11px;font-size:1rem;color:var(--ink-2)}
+.path li svg{flex:none;margin-top:4px;color:var(--blue)}
+.path-link{font-family:var(--fd);font-weight:600;color:var(--blue);display:inline-flex;align-items:center;gap:7px}
+.path-link svg{transition:transform .2s}
+.path:hover .path-link svg{transform:translateX(5px)}
+.diff{background:var(--blue-mist)}
+.diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.diff-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:32px 28px;transition:transform .26s var(--ease),box-shadow .26s var(--ease)}
+.diff-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-sm)}
+.diff-card .num{font-family:var(--fd);font-weight:800;font-size:.85rem;color:var(--blue);letter-spacing:.1em}
+.diff-card h3{font-size:1.25rem;margin:14px 0 10px;font-weight:700}
+.diff-card p{font-size:.98rem;color:var(--ink-2)}
+.diff-card .ic{width:48px;height:48px;border-radius:12px;background:var(--blue-soft);display:grid;place-items:center;margin-bottom:6px;color:var(--blue);transition:transform .26s var(--ease)}
+.diff-card:hover .ic{transform:scale(1.08) rotate(-3deg)}
+.proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:780px;margin:0 auto}
+.stat{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:34px 30px;position:relative;transition:transform .26s var(--ease),box-shadow .26s var(--ease)}
+.stat:hover{transform:translateY(-5px);box-shadow:var(--shadow-sm)}
+.stat .big{font-family:var(--fd);font-weight:800;font-size:3rem;color:var(--ink);line-height:1;letter-spacing:-.03em}
+.stat .lead{margin:12px 0 16px;font-size:1.02rem;color:var(--ink-2)}
+.stat .src{font-size:.8rem;color:var(--slate);border-top:1px solid var(--line);padding-top:12px}
+.stat .src b{color:var(--ink)}
+.proof-foot{text-align:center;margin-top:30px;font-size:.92rem;color:var(--slate);max-width:62ch;margin-left:auto;margin-right:auto}
+.service{position:relative;overflow:hidden;background:linear-gradient(165deg,var(--ink) 0%,#10204A 60%,#143A8C 100%);color:#fff}
+.service::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(40,132,255,.32),transparent 55%)}
+.service .wrap{position:relative}
+.service-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.service h2{color:#fff;font-size:clamp(2rem,3.6vw,2.7rem);font-weight:800}
+.service .eyebrow{color:var(--blue-lt)}
+.service p.lead{color:rgba(255,255,255,.82);font-size:1.12rem;margin-top:16px;max-width:46ch}
+.svc-points{list-style:none;margin:26px 0 0;display:flex;flex-direction:column;gap:14px}
+.svc-points li{display:flex;gap:13px;align-items:flex-start;color:rgba(255,255,255,.9)}
+.svc-points svg{flex:none;margin-top:3px;color:var(--blue-lt)}
+.form-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:34px;backdrop-filter:blur(8px)}
+.form-card h3{color:#fff;font-size:1.4rem;font-weight:700;margin-bottom:6px}
+.form-card .sub{color:rgba(255,255,255,.65);font-size:.94rem;margin-bottom:22px}
+.field{margin-bottom:16px}
+.field label{display:block;font-family:var(--fd);font-weight:600;font-size:.82rem;color:rgba(255,255,255,.8);margin-bottom:7px}
+.field input,.field select{width:100%;padding:13px 15px;border-radius:11px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.07);color:#fff;font-family:var(--fb);font-size:.98rem;transition:border-color .2s,background .2s}
+.field input::placeholder{color:rgba(255,255,255,.4)}
+.field input:focus,.field select:focus{outline:none;border-color:var(--blue);background:rgba(255,255,255,.12)}
+.field select option{color:#111}
+.form-card .btn-primary{width:100%;justify-content:center;margin-top:4px}
+.form-card .or{text-align:center;color:rgba(255,255,255,.5);font-size:.82rem;margin:16px 0}
+.btn-wa{width:100%;justify-content:center;background:#fff;color:var(--ink);border:0}
+.btn-wa svg{color:#25D366}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 16px 30px -12px rgba(0,0,0,.5)}
+.form-msg{display:none;text-align:center;color:#fff;padding:30px 10px}
+.form-msg.show{display:block}
+.form-msg .tick{width:56px;height:56px;border-radius:50%;background:var(--blue);display:grid;place-items:center;margin:0 auto 16px}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+.about-art{aspect-ratio:4/3;border-radius:var(--r);background:linear-gradient(160deg,var(--blue-soft),#fff);border:1px solid var(--line);position:relative;overflow:hidden;box-shadow:var(--shadow-sm)}
+.about h2{font-size:clamp(1.9rem,3.4vw,2.5rem);font-weight:800}
+.about p{margin-top:18px;font-size:1.08rem;color:var(--ink-2)}
+.about .quote{margin-top:24px;padding-left:20px;border-left:3px solid var(--blue);font-family:var(--fd);font-weight:600;color:var(--ink);font-size:1.15rem;font-style:italic}
+.faq{max-width:760px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;background:none;border:0;text-align:left;padding:24px 44px 24px 0;font-family:var(--fd);font-weight:600;font-size:1.12rem;color:var(--ink);cursor:pointer;position:relative}
+.faq-q::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);font-size:1.5rem;color:var(--blue);font-weight:400;transition:transform .25s}
+.faq-item.open .faq-q::after{transform:translateY(-50%) rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s var(--ease)}
+.faq-a p{padding:0 0 24px;color:var(--ink-2);font-size:1.02rem}
+.final{text-align:center;background:var(--blue-mist)}
+.final h2{font-size:clamp(2rem,4vw,3rem);font-weight:800;max-width:20ch;margin:0 auto}
+.final p{font-size:1.15rem;color:var(--ink-2);margin:18px auto 32px;max-width:48ch}
+footer{background:var(--ink);color:rgba(255,255,255,.7);padding:54px 0 36px;font-size:.92rem}
+.foot-grid{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.1)}
+.foot-brand{display:flex;align-items:center;gap:10px;font-family:var(--fd);font-weight:800;font-size:1.3rem;color:#fff}
+.foot-brand .box{width:34px;height:34px;border:2px dashed var(--blue-lt);border-radius:8px;display:grid;place-items:center;font-size:.42rem;font-weight:700;color:var(--blue-lt);text-align:center;line-height:1.15;letter-spacing:.03em}
+.foot-tag{margin-top:14px;max-width:34ch;color:rgba(255,255,255,.6)}
+.foot-cols{display:flex;gap:54px;flex-wrap:wrap}
+.foot-col h4{color:#fff;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;font-family:var(--fd)}
+.foot-col a{display:block;color:rgba(255,255,255,.7);margin-bottom:9px;font-size:.95rem}
+.foot-col a:hover{color:var(--blue-lt)}
+.foot-bottom{padding-top:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.85rem;color:rgba(255,255,255,.5)}
+.fade-up{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.fade-up.in{opacity:1;transform:none}
+.mobile-menu{position:fixed;inset:0;background:var(--paper);z-index:200;padding:90px 28px 40px;transform:translateX(100%);transition:transform .35s var(--ease);display:flex;flex-direction:column;gap:8px}
+.mobile-menu.open{transform:none}
+.mobile-menu a{font-family:var(--fd);font-weight:600;font-size:1.4rem;color:var(--ink);padding:14px 0;border-bottom:1px solid var(--line)}
+.mobile-menu .btn{margin-top:20px;justify-content:center}
+.mobile-close{position:absolute;top:22px;right:22px;background:none;border:0;font-size:2.2rem;color:var(--ink);cursor:pointer;line-height:1}
+@media(max-width:920px){
+  .hero-grid,.service-grid,.about-grid{grid-template-columns:1fr;gap:40px}
+  .hero-art{margin:0 auto;max-width:380px}.about-art{order:-1}
+  .diff-grid{grid-template-columns:1fr}.proof-grid{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .sec{padding:68px 0}.nav-links{display:none}.hamburger{display:flex}
+  .paths{grid-template-columns:1fr}.hero h1{font-size:2.4rem}
+  .foot-grid{flex-direction:column;gap:30px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.fade-up{opacity:1;transform:none}}
+[data-bm]{display:none}
+body.bm [data-en]{display:none}
+body.bm [data-bm]{display:revert}
+body.bm .nav-links [data-bm]{display:inline}
+</style>
+</head>
+<body id="top">
+
+<nav class="nav" id="nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#top" class="logo-ph" aria-label="Noryx home"><span class="box">LOGO<br>HERE</span> Noryx</a>
+    <div class="nav-links">
+      <a href="#paths"><span data-en>Who it's for</span><span data-bm>Untuk siapa</span></a>
+      <a href="#service"><span data-en>One-on-one</span><span data-bm>Sesi peribadi</span></a>
+      <a href="#difference"><span data-en>Why Noryx</span><span data-bm>Kenapa Noryx</span></a>
+      <a href="#about"><span data-en>About</span><span data-bm>Tentang</span></a>
+      <a href="#faq"><span data-en>FAQ</span><span data-bm>Soalan</span></a>
+    </div>
+    <div class="nav-cta">
+      <span class="lang"><button class="on" id="enBtn" aria-label="English">EN</button><button id="bmBtn" aria-label="Bahasa Melayu">BM</button></span>
+      <a href="#service" class="btn btn-primary"><span data-en>Get in touch</span><span data-bm>Hubungi kami</span></a>
+      <button class="hamburger" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="closeMenu" aria-label="Close menu">&times;</button>
+  <a href="#paths"><span data-en>Who it's for</span><span data-bm>Untuk siapa</span></a>
+  <a href="#service"><span data-en>One-on-one</span><span data-bm>Sesi peribadi</span></a>
+  <a href="#difference"><span data-en>Why Noryx</span><span data-bm>Kenapa Noryx</span></a>
+  <a href="#about"><span data-en>About</span><span data-bm>Tentang</span></a>
+  <a href="#faq"><span data-en>FAQ</span><span data-bm>Soalan</span></a>
+  <a href="#service" class="btn btn-primary"><span data-en>Get in touch</span><span data-bm>Hubungi kami</span></a>
+</div>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag-pill"><span class="dot"></span>Growing People. Growing Business.</span>
+      <h1><span data-en>Anyone can learn how money <span class="accent">actually works.</span></span><span data-bm>Sesiapa sahaja boleh belajar cara wang <span class="accent">sebenarnya berfungsi.</span></span></h1>
+      <p class="hero-sub"><span data-en>Noryx is a business education centre. We sit with you one-on-one and help you find your path to earning — whatever your starting point.</span><span data-bm>Noryx ialah pusat pendidikan perniagaan. Kami duduk bersama anda secara peribadi dan bantu anda cari jalan untuk menjana pendapatan — tidak kira dari mana anda bermula.</span></p>
+      <div class="hero-actions">
+        <a href="#service" class="btn btn-primary btn-lg"><span data-en>Talk to us one-on-one</span><span data-bm>Berbual secara peribadi</span></a>
+        <a href="#paths" class="btn btn-ghost btn-lg"><span data-en>Find your path</span><span data-bm>Cari jalan anda</span></a>
+      </div>
+      <p class="hero-note"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> <span data-en>No background needed. <b>Worker, owner, student — start here.</b></span><span data-bm>Tiada latar belakang diperlukan. <b>Pekerja, pemilik, pelajar — mula di sini.</b></span></p>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="particle-card">
+        <div class="pc-head"><span class="lbl" data-en>From nothing</span><span class="lbl" data-bm>Dari kosong</span><span class="stage" data-en>&rarr; into something</span><span class="stage" data-bm>&rarr; jadi sesuatu</span></div>
+        <svg class="svg-stage" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet">
+          <rect class="bar" x="78" y="300" width="34" height="40" rx="4" fill="#AEB6C2" opacity=".5"/>
+          <rect class="bar" x="128" y="270" width="34" height="70" rx="4" fill="#9CC0FF"/>
+          <rect class="bar" x="178" y="225" width="34" height="115" rx="4" fill="#5C9CFF"/>
+          <rect class="bar" x="228" y="165" width="34" height="175" rx="4" fill="#2884FF"/>
+          <rect class="bar" x="278" y="95" width="34" height="245" rx="4" fill="#1466E0"/>
+          <g fill="#2884FF">
+            <rect class="dot" x="40" y="120" width="6" height="6"/><rect class="dot" x="56" y="150" width="5" height="5"/>
+            <rect class="dot" x="34" y="170" width="4" height="4"/><rect class="dot" x="60" y="195" width="5" height="5"/>
+            <rect class="dot" x="44" y="215" width="4" height="4"/><rect class="dot" x="30" y="240" width="6" height="6"/>
+            <rect class="dot" x="54" y="262" width="4" height="4"/><rect class="dot" x="38" y="285" width="5" height="5"/>
+          </g>
+          <circle cx="295" cy="78" r="9" fill="#FFC233"/>
+          <g stroke="#FFC233" stroke-width="2.5" stroke-linecap="round"><line x1="295" y1="58" x2="295" y2="50"/><line x1="278" y1="68" x2="272" y2="63"/><line x1="312" y1="68" x2="318" y2="63"/></g>
+        </svg>
+      </div>
+      <div class="float-chip fc-1"><span class="ic">🎯</span><span data-en>Find what you're good at</span><span data-bm>Cari kelebihan anda</span></div>
+      <div class="float-chip fc-2"><span class="ic">💡</span><span data-en>Turn it into income</span><span data-bm>Jadikan ia pendapatan</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="trust" aria-label="Trust indicators">
+  <div class="trust-inner">
+    <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"/></svg><span data-en>Real data, named sources</span><span data-bm>Data sebenar, sumber dinyatakan</span></div>
+    <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 7a4 4 0 1 0 0 0"/></svg><span data-en>One-on-one guidance</span><span data-bm>Bimbingan peribadi</span></div>
+    <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 7a4 4 0 1 0 0 0M23 21v-2a4 4 0 0 0-3-3.87"/></svg><span data-en>Built for every background</span><span data-bm>Untuk semua latar belakang</span></div>
+    <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span data-en>No income promises — real skill</span><span data-bm>Tiada janji pendapatan — kemahiran sebenar</span></div>
+  </div>
+</section>
+
+<section class="sec" id="paths">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <span class="eyebrow"><span data-en>Two journeys, one place</span><span data-bm>Dua perjalanan, satu tempat</span></span>
+      <h2><span data-en>Which one are you?</span><span data-bm>Anda yang mana satu?</span></h2>
+      <p><span data-en>Both paths start the same way — a one-on-one conversation with us.</span><span data-bm>Kedua-dua jalan bermula sama — satu perbualan peribadi dengan kami.</span></p>
+    </div>
+    <div class="paths">
+      <div class="path fade-up">
+        <span class="ptag">START</span>
+        <h3><span data-en>I want to start earning</span><span data-bm>Saya mahu mula menjana pendapatan</span></h3>
+        <p class="who"><span data-en>For anyone who hasn't begun — worker, student, contractor, parent at home.</span><span data-bm>Untuk sesiapa yang belum bermula — pekerja, pelajar, kontraktor, ibu bapa di rumah.</span></p>
+        <ul>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span data-en>Find the skill you already have</span><span data-bm>Cari kemahiran yang anda sudah ada</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span data-en>Learn how income really gets made</span><span data-bm>Belajar cara pendapatan sebenar dijana</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span data-en>Take the first step — without capital fear</span><span data-bm>Ambil langkah pertama — tanpa takut modal</span></li>
+        </ul>
+        <a href="#service" class="path-link"><span data-en>This is me</span><span data-bm>Ini saya</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="path fade-up">
+        <span class="ptag">FIX &amp; GROW</span>
+        <h3><span data-en>I run a business that's stuck</span><span data-bm>Saya ada perniagaan yang tersekat</span></h3>
+        <p class="who"><span data-en>For owners and operators who sense something's off — sales, cash, or growth.</span><span data-bm>Untuk pemilik dan pengendali yang rasa ada sesuatu tak kena — jualan, tunai, atau pertumbuhan.</span></p>
+        <ul>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span data-en>See where the money actually leaks</span><span data-bm>Lihat di mana wang sebenarnya bocor</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span data-en>Understand the numbers behind your business</span><span data-bm>Fahami angka di sebalik perniagaan anda</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span data-en>Build a path to real, steady growth</span><span data-bm>Bina jalan ke arah pertumbuhan yang mantap</span></li>
+        </ul>
+        <a href="#service" class="path-link"><span data-en>This is me</span><span data-bm>Ini saya</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec service" id="service">
+  <div class="wrap service-grid">
+    <div class="fade-up">
+      <span class="eyebrow"><span data-en>Work with us directly</span><span data-bm>Bekerja terus dengan kami</span></span>
+      <h2><span data-en>Start with a one-on-one session.</span><span data-bm>Mulakan dengan sesi peribadi.</span></h2>
+      <p class="lead"><span data-en>We sit with you personally — understand where you are, and map your first real step. Honest guidance, grounded in real data.</span><span data-bm>Kami duduk bersama anda secara peribadi — fahami keadaan anda, dan rancang langkah pertama anda. Bimbingan jujur, berdasarkan data sebenar.</span></p>
+      <ul class="svc-points">
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span data-en>A real conversation about your situation — not a sales pitch</span><span data-bm>Perbualan sebenar tentang keadaan anda — bukan jualan</span></li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span data-en>Find the skill or angle you can actually build on</span><span data-bm>Cari kemahiran atau sudut yang anda boleh bina</span></li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span data-en>Leave with a clear first step — whatever your starting point</span><span data-bm>Pulang dengan langkah pertama yang jelas — tidak kira dari mana anda mula</span></li>
+      </ul>
+    </div>
+    <div class="form-card fade-up">
+      <div id="formInner">
+        <h3><span data-en>Request a callback</span><span data-bm>Minta panggilan semula</span></h3>
+        <p class="sub"><span data-en>Leave your details and we'll reach out personally.</span><span data-bm>Tinggalkan butiran anda dan kami akan hubungi anda.</span></p>
+        <div class="field"><label><span data-en>Your name</span><span data-bm>Nama anda</span></label><input type="text" id="fName" placeholder="e.g. Ahmad"></div>
+        <div class="field"><label><span data-en>Phone / WhatsApp</span><span data-bm>Telefon / WhatsApp</span></label><input type="tel" id="fPhone" placeholder="011-2345 6789"></div>
+        <div class="field"><label><span data-en>Where are you now?</span><span data-bm>Anda di mana sekarang?</span></label>
+          <select id="fStage">
+            <option value="start">I want to start earning</option>
+            <option value="fix">I run a business that's stuck</option>
+            <option value="explore">Not sure yet — just exploring</option>
+          </select></div>
+        <button class="btn btn-primary" id="cbBtn"><span data-en>Request my callback</span><span data-bm>Minta panggilan saya</span></button>
+        <div class="or"><span data-en>— or reach me right now —</span><span data-bm>— atau hubungi saya sekarang —</span></div>
+        <a href="https://wa.me/601121000503?text=Hi%2C%20I%27d%20like%20a%20one-on-one%20session%20with%20Noryx." class="btn btn-wa" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.8.8-2.8-.2-.3A8 8 0 1 1 12 20zm4.6-6c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-1.9-1.2 7.3 7.3 0 0 1-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.5.3-.4v-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4 5.2 5.2 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg><span data-en>WhatsApp me directly</span><span data-bm>WhatsApp saya terus</span></a>
+      </div>
+      <div class="form-msg" id="formMsg">
+        <div class="tick"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h3 style="margin-bottom:8px"><span data-en>Opening WhatsApp…</span><span data-bm>Membuka WhatsApp…</span></h3>
+        <p style="color:rgba(255,255,255,.7)"><span data-en>Send the message and we'll reply personally. If WhatsApp didn't open, message us at 011-2100 0503.</span><span data-bm>Hantar mesej dan kami akan balas sendiri. Jika WhatsApp tak terbuka, mesej kami di 011-2100 0503.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec diff" id="difference">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <span class="eyebrow"><span data-en>Why Noryx</span><span data-bm>Kenapa Noryx</span></span>
+      <h2><span data-en>A school, not a shortcut.</span><span data-bm>Sebuah sekolah, bukan jalan pintas.</span></h2>
+      <p><span data-en>You've seen the "get rich quick" noise. This isn't that. Noryx teaches fundamentals you keep for life.</span><span data-bm>Anda pernah lihat bunyi "cepat kaya". Ini bukan itu. Noryx mengajar asas yang anda simpan seumur hidup.</span></p>
+    </div>
+    <div class="diff-grid">
+      <div class="diff-card fade-up">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+        <span class="num">01</span>
+        <h3><span data-en>We teach, we don't promise</span><span data-bm>Kami mengajar, bukan menjanji</span></h3>
+        <p><span data-en>No income claims. No "guaranteed returns." Just real business knowledge and the skill to use it.</span><span data-bm>Tiada dakwaan pendapatan. Tiada "pulangan terjamin." Hanya ilmu perniagaan sebenar dan kemahiran menggunakannya.</span></p>
+      </div>
+      <div class="diff-card fade-up">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M7 14l4-4 3 3 5-5"/></svg></div>
+        <span class="num">02</span>
+        <h3><span data-en>Grounded in real data</span><span data-bm>Berdasarkan data sebenar</span></h3>
+        <p><span data-en>Every lesson is built on verified research from named sources — never hype, never made-up numbers.</span><span data-bm>Setiap pelajaran dibina atas kajian yang disahkan dari sumber yang dinyatakan — bukan gembar-gembur, bukan angka rekaan.</span></p>
+      </div>
+      <div class="diff-card fade-up">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 7a4 4 0 1 0 0 0M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+        <span class="num">03</span>
+        <h3><span data-en>Open to everyone</span><span data-bm>Terbuka untuk semua</span></h3>
+        <p><span data-en>Your job title or background doesn't decide if you belong here. The will to learn does.</span><span data-bm>Jawatan atau latar belakang anda tidak menentukan tempat anda di sini. Kemahuan untuk belajar yang menentukan.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="proof">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <span class="eyebrow"><span data-en>Why this matters</span><span data-bm>Kenapa ini penting</span></span>
+      <h2><span data-en>The gap is real — and learnable.</span><span data-bm>Jurang itu nyata — dan boleh dipelajari.</span></h2>
+      <p><span data-en>The numbers tell the story most people are never taught. Knowledge closes the gap.</span><span data-bm>Angka menceritakan kisah yang ramai tidak pernah diajar. Ilmu merapatkan jurang itu.</span></p>
+    </div>
+    <div class="proof-grid">
+      <div class="stat fade-up">
+        <div class="big">~2 in 3</div>
+        <p class="lead"><span data-en>Malaysians say their savings would last three months or less if income stopped.</span><span data-bm>Rakyat Malaysia kata simpanan mereka hanya bertahan tiga bulan atau kurang jika pendapatan terhenti.</span></p>
+        <div class="src">Source: <b>RinggitPlus</b> Malaysian Financial Literacy Survey (RMFLS 2023)</div>
+      </div>
+      <div class="stat fade-up">
+        <div class="big">~90%</div>
+        <p class="lead"><span data-en>of startups don't survive — most for reasons like cash flow that can be learned and avoided.</span><span data-bm>syarikat baharu tidak bertahan — kebanyakannya kerana sebab seperti aliran tunai yang boleh dipelajari dan dielakkan.</span></p>
+        <div class="src">Source: <b>CB Insights</b> startup failure research</div>
+      </div>
+    </div>
+    <p class="proof-foot"><span data-en>Figures shown to illustrate the problem Noryx helps with. We confirm every number against its primary source before using it — and we teach you to do the same.</span><span data-bm>Angka ditunjukkan untuk menggambarkan masalah yang Noryx bantu selesaikan. Kami sahkan setiap angka dengan sumber asalnya sebelum menggunakannya — dan kami ajar anda buat perkara yang sama.</span></p>
+  </div>
+</section>
+
+<section class="sec about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-art fade-up" aria-hidden="true">
+      <svg viewBox="0 0 400 300" style="width:100%;height:100%">
+        <g stroke-linecap="round">
+          <g stroke="#AEB6C2" stroke-width="4" opacity=".55" fill="none">
+            <circle cx="70" cy="180" r="13"/><line x1="70" y1="193" x2="70" y2="235"/><line x1="70" y1="205" x2="52" y2="222"/><line x1="70" y1="205" x2="88" y2="222"/><line x1="70" y1="235" x2="56" y2="262"/><line x1="70" y1="235" x2="84" y2="262"/>
+          </g>
+          <g stroke="#5C9CFF" stroke-width="4.5" fill="none">
+            <circle cx="170" cy="150" r="14"/><line x1="170" y1="164" x2="170" y2="215"/><line x1="170" y1="178" x2="150" y2="196"/><line x1="170" y1="178" x2="190" y2="196"/><line x1="170" y1="215" x2="155" y2="248"/><line x1="170" y1="215" x2="185" y2="248"/>
+          </g>
+          <g stroke="#2884FF" stroke-width="5" fill="none">
+            <circle cx="285" cy="110" r="16"/><line x1="285" y1="126" x2="285" y2="190"/><line x1="285" y1="142" x2="262" y2="160"/><line x1="285" y1="142" x2="308" y2="124"/><line x1="285" y1="190" x2="268" y2="232"/><line x1="285" y1="190" x2="302" y2="232"/>
+          </g>
+        </g>
+        <circle cx="313" cy="92" r="11" fill="#FFC233"/>
+        <g stroke="#FFC233" stroke-width="3" stroke-linecap="round"><line x1="313" y1="68" x2="313" y2="60"/><line x1="333" y1="80" x2="340" y2="75"/></g>
+        <line x1="40" y1="270" x2="360" y2="270" stroke="#E5E9F0" stroke-width="3"/>
+      </svg>
+    </div>
+    <div class="fade-up">
+      <span class="eyebrow"><span data-en>About Noryx</span><span data-bm>Tentang Noryx</span></span>
+      <h2><span data-en>We believe business can be learned by anyone.</span><span data-bm>Kami percaya perniagaan boleh dipelajari oleh sesiapa sahaja.</span></h2>
+      <p><span data-en>Noryx is a business education centre built on one idea: where you start in life shouldn't decide whether you can build something of your own. Not your job, not your background, not your bank balance.</span><span data-bm>Noryx ialah pusat pendidikan perniagaan yang dibina atas satu idea: tempat anda bermula dalam hidup tidak sepatutnya menentukan sama ada anda boleh bina sesuatu milik sendiri. Bukan pekerjaan, bukan latar belakang, bukan baki bank anda.</span></p>
+      <p><span data-en>We bridge two worlds — the people who want to begin, and the businesses that want to grow — and teach both the same honest fundamentals, grounded in real data.</span><span data-bm>Kami menghubungkan dua dunia — mereka yang mahu bermula, dan perniagaan yang mahu berkembang — dan mengajar kedua-duanya asas jujur yang sama, berdasarkan data sebenar.</span></p>
+      <div class="quote">"Growing People. Growing Business."</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq" style="background:var(--blue-mist)">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <span class="eyebrow"><span data-en>Good questions</span><span data-bm>Soalan lazim</span></span>
+      <h2><span data-en>Questions people ask us.</span><span data-bm>Soalan yang orang tanya kami.</span></h2>
+    </div>
+    <div class="faq fade-up">
+      <div class="faq-item"><button class="faq-q"><span data-en>Do I need any business background to join?</span><span data-bm>Perlukah saya ada latar belakang perniagaan untuk sertai?</span></button><div class="faq-a"><p><span data-en>No. Noryx is built for people starting from zero as much as for experienced owners. Our one-on-one sessions meet you wherever you are.</span><span data-bm>Tidak. Noryx dibina untuk mereka yang bermula dari kosong sama seperti pemilik berpengalaman. Sesi peribadi kami menemui anda di mana sahaja anda berada.</span></p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-en>Is this another "get rich quick" thing?</span><span data-bm>Adakah ini satu lagi skim "cepat kaya"?</span></button><div class="faq-a"><p><span data-en>No. We make no income promises and sell no shortcuts. We teach business fundamentals and the skills to apply them — knowledge you keep for life. Any results come from your own work.</span><span data-bm>Tidak. Kami tidak berjanji pendapatan dan tidak menjual jalan pintas. Kami mengajar asas perniagaan dan kemahiran untuk menggunakannya — ilmu yang anda simpan seumur hidup. Sebarang hasil datang dari usaha anda sendiri.</span></p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-en>What happens in a one-on-one session?</span><span data-bm>Apa berlaku dalam sesi peribadi?</span></button><div class="faq-a"><p><span data-en>We talk through where you are now and what you want, find a skill or angle you can build on, and map a clear first step. It's a real conversation — not a sales pitch.</span><span data-bm>Kami berbincang tentang keadaan anda sekarang dan apa yang anda mahu, cari kemahiran atau sudut yang boleh anda bina, dan rancang langkah pertama yang jelas. Ia perbualan sebenar — bukan jualan.</span></p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-en>In English or Malay?</span><span data-bm>Dalam Bahasa Inggeris atau Melayu?</span></button><div class="faq-a"><p><span data-en>Whichever serves you best. Reach out on WhatsApp and we'll talk in the language you're most comfortable with.</span><span data-bm>Mana-mana yang paling sesuai untuk anda. Hubungi kami di WhatsApp dan kami akan berbual dalam bahasa yang anda paling selesa.</span></p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-en>How do I get started?</span><span data-bm>Bagaimana saya mahu mula?</span></button><div class="faq-a"><p><span data-en>Request a callback above, or tap "WhatsApp me directly." We'll set up your one-on-one session from there.</span><span data-bm>Minta panggilan semula di atas, atau tekan "WhatsApp saya terus." Kami akan aturkan sesi peribadi anda dari situ.</span></p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec final">
+  <div class="wrap">
+    <h2 class="fade-up"><span data-en>Your starting point doesn't decide your future.</span><span data-bm>Tempat permulaan anda tidak menentukan masa depan anda.</span></h2>
+    <p class="fade-up"><span data-en>Knowledge does. Sit with us one-on-one and find your first real step.</span><span data-bm>Ilmu yang menentukan. Duduk bersama kami secara peribadi dan cari langkah pertama anda.</span></p>
+    <a href="#service" class="btn btn-primary btn-lg fade-up"><span data-en>Talk to us one-on-one &rarr;</span><span data-bm>Berbual secara peribadi &rarr;</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand"><span class="box">LOGO<br>HERE</span> Noryx</div>
+        <p class="foot-tag"><span data-en>Growing People. Growing Business. A business education centre for everyone in Malaysia.</span><span data-bm>Growing People. Growing Business. Pusat pendidikan perniagaan untuk semua di Malaysia.</span></p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4><span data-en>Explore</span><span data-bm>Terokai</span></h4>
+          <a href="#paths"><span data-en>Who it's for</span><span data-bm>Untuk siapa</span></a>
+          <a href="#service"><span data-en>One-on-one</span><span data-bm>Sesi peribadi</span></a>
+          <a href="#difference"><span data-en>Why Noryx</span><span data-bm>Kenapa Noryx</span></a>
+          <a href="#about"><span data-en>About</span><span data-bm>Tentang</span></a>
+        </div>
+        <div class="foot-col">
+          <h4><span data-en>Get started</span><span data-bm>Mula</span></h4>
+          <a href="#service"><span data-en>Request a callback</span><span data-bm>Minta panggilan</span></a>
+          <a href="https://wa.me/601121000503" target="_blank" rel="noopener"><span data-en>WhatsApp us</span><span data-bm>WhatsApp kami</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>&copy; <span id="year"></span> Noryx. <span data-en>All rights reserved.</span><span data-bm>Hak cipta terpelihara.</span></div>
+      <div>WhatsApp: 011-2100 0503</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const nav=document.getElementById('nav');addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>10));
+const mm=document.getElementById('mobileMenu');
+document.getElementById('menuBtn').onclick=()=>mm.classList.add('open');
+document.getElementById('closeMenu').onclick=()=>mm.classList.remove('open');
+mm.querySelectorAll('a').forEach(a=>a.onclick=()=>mm.classList.remove('open'));
+const en=document.getElementById('enBtn'),bm=document.getElementById('bmBtn');
+en.onclick=()=>{document.body.classList.remove('bm');en.classList.add('on');bm.classList.remove('on')};
+bm.onclick=()=>{document.body.classList.add('bm');bm.classList.add('on');en.classList.remove('on')};
+document.querySelectorAll('.faq-item').forEach(item=>{
+  const q=item.querySelector('.faq-q'),a=item.querySelector('.faq-a');
+  q.onclick=()=>{const open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').style.maxHeight=null});
+    if(!open){item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}};
+});
+document.getElementById('cbBtn').onclick=()=>{
+  const n=document.getElementById('fName').value.trim();
+  const p=document.getElementById('fPhone').value.trim();
+  const s=document.getElementById('fStage');
+  const stageTxt=s.options[s.selectedIndex].text;
+  const isBM=document.body.classList.contains('bm');
+  const msg=isBM
+    ? `Hai Noryx, saya ${n||'(nama)'}. Telefon: ${p||'(nombor)'}. Keadaan saya: ${stageTxt}. Saya nak minta panggilan semula untuk sesi peribadi.`
+    : `Hi Noryx, I'm ${n||'(name)'}. Phone: ${p||'(number)'}. My situation: ${stageTxt}. I'd like to request a callback for a one-on-one session.`;
+  window.open('https://wa.me/601121000503?text='+encodeURIComponent(msg),'_blank');
+  document.getElementById('formInner').style.display='none';
+  document.getElementById('formMsg').classList.add('show');
+};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.fade-up').forEach((el,i)=>{el.style.transitionDelay=(i%3*60)+'ms';io.observe(el)});
+</script>
+</body>
+</html>
